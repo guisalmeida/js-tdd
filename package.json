@@ -1,0 +1,24 @@
+{
+  "name": "js-tdd-course",
+  "version": "1.0.0",
+  "description": "Lib js tdd course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuiSAlmeida/js-tdd.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Guilherme Almeida <guisalmeida.dev@gmail.com> (https://guisalmeida.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GuiSAlmeida/js-tdd/issues"
+  },
+  "homepage": "https://github.com/GuiSAlmeida/js-tdd#readme"
+}
