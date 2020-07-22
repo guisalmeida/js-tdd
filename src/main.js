@@ -4,4 +4,4 @@ function test() {
   return a * a;
 }
 
-test();
+test()
