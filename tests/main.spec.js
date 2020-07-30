@@ -11,7 +11,7 @@ describe('Main', function() {  //separa grandes blocos
       })
     });
 
-    context('Case 2', function() {
+    context.skip('Case 2', function() {
       it('should happen blabla', function() {
         //espera que aconteça algo
 

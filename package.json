@@ -6,7 +6,15 @@
   "scripts": {
     "lint": "npx eslint src/*.js ",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
-    "test:watch": "./node_modules/.bin/mocha tests/fizzBuzz.spec.js --require babel-register --watch"
+    "test:watch": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
+    "test:coverage": "nyc npm test"
+  },
+  "nyc": {
+    "functions": 80,
+    "lines": 80,
+    "check-coverage": true,
+    "reporter": ["text", "html"],
+    "exclude": ["tests/**"]
   },
   "repository": {
     "type": "git",
@@ -32,11 +40,12 @@
     "eslint-plugin-import": "^2.22.0",
     "husky": "^4.2.5",
     "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
     "uglifyjs-webpack-plugin": "^2.2.0"
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run lint"
+      "pre-push": "npm run lint && npm run test:coverage"
     }
   }
 }
